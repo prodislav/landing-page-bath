@@ -34,7 +34,7 @@ export const Header = React.memo(() => {
                                     Проекты бань
                                 </div>
                                 <div className='p-a image-cost'>
-                                    $$$
+                                    $$
                                 </div>
                             </div>
                         </div>

@@ -39,14 +39,14 @@ export const Home = React.memo(() => {
                             </Link>
                         </div>
                         <div className="w-50 h-350 p-r">
-                            <div className="image i-13">
+                            <div className="image i-12">
                                 <div className="image-shadow"></div>
                             </div>
                             <div className='p-a image-text'>
                                 Проекты бань
                             </div>
                             <div className='p-a image-cost'>
-                                $$$
+                                $$
                                 </div>
                         </div>
                     </div>
