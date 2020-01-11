@@ -56,19 +56,25 @@ code {
 }
 
 @media (min-width: 768px) {
-  .block-wrapper, .header {
+
+  .block-wrapper,
+  .header {
     width: 750px;
   }
 }
 
 @media (min-width: 992px) {
-  .block-wrapper, .header {
+
+  .block-wrapper,
+  .header {
     width: 970px;
   }
 }
 
 @media (min-width: 1200px) {
-  .block-wrapper, .header {
+
+  .block-wrapper,
+  .header {
     width: 1170px;
   }
 }
@@ -96,20 +102,102 @@ code {
 }
 
 .header_block {
-  background-color: white;
+  background-color: #333;
+  color: white;
   z-index: 200;
+  height: 90px;
+  position: fixed;
 }
 
 .header__nav {
-  padding: 1em 0;
   font-size: 1em;
   color: #333;
+  flex: 1;
+  max-width: 550px;
+}
+
+.header--font {
+  font-size: 1em;
+  font-weight: 100;
+  text-transform: uppercase;
+}
+
+.header__logo {
+  background-image: url('./images/Screenshot_1.png');
+  background-position: center top;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 24px;
+  height: 24px;
+}
+
+.align-i-c {
+  align-items: center;
 }
 
 .header__link {
-  font-size: 1.125em;
-  font-weight: 500;
-  color: #080707;
+  transition: all .3s;
+  font-size: 1.2em;
+  font-weight: 100;
+  text-transform: uppercase;
+  color: white;
+}
+
+.menu {
+
+}
+
+.h-240 {
+  height: 240px;
+}
+
+.m-0-20 {
+  margin: 10px 20px;
+}
+
+.w-300 {
+  width: 300px;
+}
+
+.image-cost {
+  right: 10px;
+  top: 10px;
+  font-size: 20px;
+  font-weight: bold;
+  line-height: 1;
+  color: white;
+}
+
+.pr {
+  /* position: relative; */
+}
+
+.menu {
+  position: fixed;
+  background-color: #333;
+  left: 0;
+  right: 0;
+  top: 90px;
+  z-index: 200
+}
+
+.p-r {
+  position: relative;
+}
+
+.p-a {
+  position: absolute;
+}
+
+.image-text {
+  width: 100%;
+  top: 75%;
+  font-size: 30px;
+    font-weight: bold;
+    line-height: 1.17;
+    padding-bottom: 23px;
+    text-align: center;
+    color: white;
 }
 
 .flex {
@@ -177,9 +265,9 @@ code {
 
 .main-banner-image {
   width: 100%;
-  height: calc(100vh - 10.5em);
+  height: calc(100vh - 9em);
   background-image: url('./images/11.jpg');
-  margin: 10.5em 0 0;
+  margin: 9em 0 0;
 }
 
 .fix {
@@ -326,4 +414,28 @@ code {
   width: 270px;
   margin: 15px;
   letter-spacing: 1px;
+}
+
+.header {
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+}
+
+.header__nav>div {
+  display: block;
+  line-height: 90px;
+  padding: 0 10px;
+  color: #fff;
+  transition: all .3s;
+}
+
+.header__nav>div:hover {
+  color: #ffd800;
+  cursor: pointer;
+}
+
+.header__link:hover {
+  color: #ffd800;
 }
