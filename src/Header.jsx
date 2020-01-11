@@ -3,15 +3,15 @@ import { Link } from 'react-router-dom';
 
 export const Header = React.memo(() => {
 
-    const [toggled, setToggled] = React.useState(true);
+    const [toggled, setToggled] = React.useState(false);
 
     const toggleHover = () => {
-        // setToggled(!toggled)
+        setToggled(!toggled)
     }
     return (
         <>
             {
-                toggled && <div className='menu' onMouseEnter={() => { }} onMouseLeave={() => { }}>
+                toggled && <div className='menu' onMouseEnter={() => setToggled(true)} onMouseLeave={() => setToggled(false)}>
                     <div className="flex-c">
                         <div className="h-240 w-300 m-0-20 p-r">
                             <Link to="/project/1">
