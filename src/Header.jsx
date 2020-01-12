@@ -14,7 +14,7 @@ export const Header = React.memo(() => {
                 toggled && <div className='menu' onMouseEnter={() => setToggled(true)} onMouseLeave={() => setToggled(false)}>
                     <div className="flex-c">
                         <div className="h-240 w-300 m-0-20 p-r">
-                            <Link to="/project/1">
+                            <Link to="/project/1" onClick={() => setToggled(false)}>
                                 <div className="image i-13">
                                     <div className="image-shadow"></div>
                                     <div className='p-a image-text'>
@@ -28,15 +28,19 @@ export const Header = React.memo(() => {
                             </Link>
                         </div>
                         <div className="h-240 w-300 m-0-20 p-r">
-                            <div className="image i-12">
+
+                            <Link to="/bathes" onClick={() => setToggled(false)}>
+                                <div className="image i-12">
                                 <div className="image-shadow"></div>
-                                <div className='p-a image-text'>
-                                    Проекты бань
+                                    <div className='p-a image-text'>
+                                        Проекты бань
                                 </div>
-                                <div className='p-a image-cost'>
-                                    $$
+                                    <div className='p-a image-cost'>
+                                        $$
                                 </div>
-                            </div>
+                                </div>
+
+                            </Link>
                         </div>
                     </div>
                 </div>

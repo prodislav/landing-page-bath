@@ -5,6 +5,7 @@ import WebFont from 'webfontloader';
 import { Route,  BrowserRouter as Router, Switch } from 'react-router-dom';
 import { Home } from './Home';
 import { ProjectPage } from './ProjectPage';
+import { BathesContainer } from './Bath';
 
 WebFont.load({
   google: {
@@ -20,7 +21,7 @@ export const App = React.memo(() => {
       <Switch>
         <Route exact path="/" component={Home} />
         <Route path="/project/1" component={ProjectPage} />
-        <Route path="/bathes" component={() => 'CCC'} />
+        <Route path="/bathes" component={BathesContainer} />
       </Switch>
     </Router>
   );
