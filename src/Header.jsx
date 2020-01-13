@@ -52,7 +52,13 @@ export const Header = React.memo(() => {
                         </div>
                             <div>Услуги</div>
                             <div>Галерея</div>
-                            <div>О нас</div>
+
+                            <div>
+                                <Link to="/about">
+                                    О нас
+                                </Link>
+                            </div>
+
                             <div>Контакты</div>
                         </nav>
 

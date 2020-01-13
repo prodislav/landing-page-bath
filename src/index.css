@@ -55,6 +55,10 @@ code {
   cursor: pointer;
 }
 
+.f-s-20 {
+  font-size: 20px;
+}
+
 @media (min-width: 768px) {
   .block-wrapper, .header {
     width: 750px;
@@ -338,6 +342,10 @@ code {
   color: #587640;
 }
 
+.header__nav a {
+  color: white;
+}
+
 .main-banner-image {
   width: 100%;
   height: calc(100vh - 9em);
@@ -511,6 +519,11 @@ code {
 }
 
 .header__nav>div:hover {
+  color: #ffd800;
+  cursor: pointer;
+}
+
+.header__nav>a:hover {
   color: #ffd800;
   cursor: pointer;
 }
