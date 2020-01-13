@@ -21,8 +21,8 @@ export const Item = React.memo(props => {
                                 Цена
             </span>
                             <span className="item-area">
-                                Площадь
-            </span>
+                                {props.luxType}
+                            </span>
                         </div>
                     </div>
 
