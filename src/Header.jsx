@@ -2,12 +2,7 @@ import React from 'react'
 import { Link } from 'react-router-dom';
 
 export const Header = React.memo(() => {
-
     const [toggled, setToggled] = React.useState(false);
-
-    const toggleHover = () => {
-        setToggled(!toggled)
-    }
     return (
         <>
             {
@@ -31,7 +26,7 @@ export const Header = React.memo(() => {
 
                             <Link to="/bathes" onClick={() => setToggled(false)}>
                                 <div className="image i-12">
-                                <div className="image-shadow"></div>
+                                    <div className="image-shadow"></div>
                                     <div className='p-a image-text'>
                                         Проекты бань
                                 </div>
@@ -53,7 +48,7 @@ export const Header = React.memo(() => {
                             </div>
                         </Link>
                         <nav className="header__nav flex-sb">
-                            <div className='pr' onMouseEnter={toggleHover} onMouseLeave={toggleHover}>Проекты
+                            <div onMouseEnter={() => setToggled(true)} onMouseLeave={() => setToggled(false)}>Проекты
                         </div>
                             <div>Услуги</div>
                             <div>Галерея</div>

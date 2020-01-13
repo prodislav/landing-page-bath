@@ -9,8 +9,9 @@
             "bath-1-4.jpg"
         ],
         "defaultPhoto": "bath-1-1.jpg",
-        "name": "Баня 1",
-        "luxType": "Эконом"
+        "name": "Эконом",
+        "luxType": "Эконом",
+        "area": "20м"
     },
     {
         "id": "2",
@@ -24,8 +25,9 @@
             "bath-2-6.jpg"
         ],
         "defaultPhoto": "bath-2-1.jpg",
-        "name": "Баня 2",
-        "luxType": "Оптимал"
+        "name": "Оптимал",
+        "luxType": "Оптимал",
+        "area": "40м"
     },
     {
         "id": "3",
@@ -35,7 +37,8 @@
             "bath-3-2.jpg"
         ],
         "defaultPhoto": "bath-3-1.jpg",
-        "name": "Баня 3",
-        "luxType": "Люкс"
+        "name": "Люкс",
+        "luxType": "Люкс",
+        "area": "60м"
     }
 ]

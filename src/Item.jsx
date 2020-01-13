@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 
 export const Item = React.memo(props => {
     console.log(props)
-    const itemWrap = { width: '33.33%', height: '300px', display: 'flex', justifyContent: 'center', alignItems: 'center' }
+    const itemWrap = { width: '50%', height: '300px', display: 'flex', justifyContent: 'center', alignItems: 'center' }
     const itemContent = { width: '95%', height: '95%', padding: '2,5%', backgroundColor: '#f2f2f2', position: 'absolute' }
     return (
         <div style={itemWrap} className={`item-wrapper `}>
@@ -21,7 +21,8 @@ export const Item = React.memo(props => {
                                 Цена
             </span>
                             <span className="item-area">
-                                {props.luxType}
+                                {props.area}
+                                <sup><small>2</small></sup>
                             </span>
                         </div>
                     </div>
