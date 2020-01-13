@@ -1,60 +1,11 @@
 import React from 'react'
-import { Link } from 'react-router-dom';
+import data from './projects/projects.json';
+import { Item } from './Item.jsx'
 
 export const ProjectsView = React.memo(() => {
     return (
-        <div className="flex flex-w">
-            <div style={{ width: '33%', height: '300px' }}>
-                <div style={{ width: '95%', padding: '2,5% 0', backgroundColor: 'gray' }}>
-                    width
-                </div>
-            </div>
-            <div style={{ width: '33%', height: '300px' }}>
-                <div style={{ width: '95%', padding: '2,5% 0', backgroundColor: 'gray' }}>
-                    width
-                </div>
-            </div>
-            <div style={{ width: '33%', height: '300px' }}>
-                <div style={{ width: '95%', padding: '2,5% 0', backgroundColor: 'gray' }}>
-                    width
-                </div>
-            </div>
-            <div style={{ width: '33%', height: '300px' }}>
-                <div style={{ width: '95%', padding: '2,5% 0', backgroundColor: 'gray' }}>
-                    width
-                </div>
-            </div>
-            <div style={{ width: '33%', height: '300px' }}>
-                <div style={{ width: '95%', padding: '2,5% 0', backgroundColor: 'gray' }}>
-                    width
-                </div>
-            </div>
-            <div style={{ width: '33%', height: '300px' }}>
-                <div style={{ width: '95%', padding: '2,5% 0', backgroundColor: 'gray' }}>
-                    width
-                </div>
-            </div>
-            <div style={{ width: '33%', height: '300px' }}>
-                <div style={{ width: '95%', padding: '2,5% 0', backgroundColor: 'gray' }}>
-                    width
-                </div>
-            </div>
-            <div style={{ width: '33%', height: '300px' }}>
-                <div style={{ width: '95%', padding: '2,5% 0', backgroundColor: 'gray' }}>
-                    width
-                </div>
-            </div>
-            <div style={{ width: '33%', height: '300px' }}>
-                <div style={{ width: '95%', padding: '2,5% 0', backgroundColor: 'gray' }}>
-                    width
-                </div>
-            </div>
-            <div style={{ width: '33%', height: '300px' }}>
-                <div style={{ width: '95%', padding: '2,5% 0', backgroundColor: 'gray' }}>
-                    width
-                </div>
-            </div>
-
+        <div className="flex flex-w m-top-90">
+            {data ? data.filter(el => el.type === "BATH").map(el => <Item {...el} />) : null}
         </div>
     )
 })

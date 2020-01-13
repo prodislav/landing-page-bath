@@ -1,0 +1,72 @@
+[
+    {
+        "id": "1",
+        "type": "BATH",
+        "projectPhotos": [
+            "bath-1-1.jpg",
+            "bath-1-2.jpg"
+        ],
+        "defaultPhoto": "bath-1-1.jpg",
+        "name": "bath"
+    },
+    {
+        "id": "2",
+        "type": "BATH",
+        "projectPhotos": [
+            "bath-1-1.jpg",
+            "bath-1-2.jpg"
+        ],
+        "defaultPhoto": "bath-1-1.jpg",
+        "name": "bath"
+    },
+    {
+        "id": "3",
+        "type": "BATH",
+        "projectPhotos": [
+            "bath-1-1.jpg",
+            "bath-1-2.jpg"
+        ],
+        "defaultPhoto": "bath-1-1.jpg",
+        "name": "bath"
+    },
+    {
+        "id": "4",
+        "type": "BATH",
+        "projectPhotos": [
+            "bath-1-1.jpg",
+            "bath-1-2.jpg"
+        ],
+        "defaultPhoto": "bath-1-1.jpg",
+        "name": "bath"
+    },
+    {
+        "id": "5",
+        "type": "BATH",
+        "projectPhotos": [
+            "bath-1-1.jpg",
+            "bath-1-2.jpg"
+        ],
+        "defaultPhoto": "bath-1-1.jpg",
+        "name": "bath"
+    },
+    {
+        "id": "6",
+        "type": "BATH",
+        "projectPhotos": [
+            "bath-1-1.jpg",
+            "bath-1-2.jpg"
+        ],
+        "defaultPhoto": "bath-1-1.jpg",
+        "name": "bath"
+    },
+    {
+        "id": "7",
+        "type": "BATH",
+        "projectPhotos": [
+            "bath-1-1.jpg",
+            "bath-1-2.jpg"
+        ],
+        "defaultPhoto": "bath-1-1.jpg",
+        "name": "bath"
+    }
+]

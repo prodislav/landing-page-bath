@@ -56,25 +56,19 @@ code {
 }
 
 @media (min-width: 768px) {
-
-  .block-wrapper,
-  .header {
+  .block-wrapper, .header {
     width: 750px;
   }
 }
 
 @media (min-width: 992px) {
-
-  .block-wrapper,
-  .header {
+  .block-wrapper, .header {
     width: 970px;
   }
 }
 
 @media (min-width: 1200px) {
-
-  .block-wrapper,
-  .header {
+  .block-wrapper, .header {
     width: 1170px;
   }
 }
@@ -101,12 +95,34 @@ code {
   margin: 0 auto;
 }
 
+.item-content:hover .hover-effect {
+  height: 99%;
+  position: relative;
+  background-color: rgba(255, 255, 255, 0.1);
+  cursor: pointer;
+}
+
+/* .hover-effect {
+  height: 100%;
+  position: relative;
+  background-color: rgba(255, 255, 255, 0.1);
+  cursor: pointer;
+} */
+
+.item-wrapper {
+  position: relative;
+}
+
 .header_block {
   background-color: #333;
   color: white;
   z-index: 200;
   height: 90px;
   position: fixed;
+}
+
+.m-top-90 {
+  margin-top: 90px;
 }
 
 .header__nav {
@@ -143,9 +159,7 @@ code {
   color: white;
 }
 
-.menu {
-
-}
+.menu {}
 
 .h-240 {
   height: 240px;
@@ -193,11 +207,11 @@ code {
   width: 100%;
   top: 75%;
   font-size: 30px;
-    font-weight: bold;
-    line-height: 1.17;
-    padding-bottom: 23px;
-    text-align: center;
-    color: white;
+  font-weight: bold;
+  line-height: 1.17;
+  padding-bottom: 23px;
+  text-align: center;
+  color: white;
 }
 
 .flex {
@@ -263,6 +277,49 @@ code {
   height: 100%;
 }
 
+.item-image {
+  height: 70%;
+  background-position: center top;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.item-title {
+  font-size: 20px;
+  font-weight: 500;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1;
+  letter-spacing: normal;
+  text-align: left;
+  color: #333333;
+  font-family: Roboto, sans-serif;
+  height: 20%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 10px 20px 20px;
+}
+
+.item-price {
+  font-size: 25px;
+  font-family: 'Roboto', sans-serif !important;
+  font-weight: 900;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1;
+  color: #c8821c;
+  word-spacing: -1px;
+}
+
+.item-area {
+  font-size: 25px;
+  font-weight: 900;
+  font-family: 'Roboto', sans-serif !important;
+  line-height: 1;
+  color: #587640;
+}
+
 .main-banner-image {
   width: 100%;
   height: calc(100vh - 9em);
@@ -296,6 +353,10 @@ code {
 .main-banner-info {
   position: absolute;
   top: 50%;
+}
+
+.t-align-c {
+  text-align: center;
 }
 
 .banner_button {
@@ -438,4 +499,8 @@ code {
 
 .header__link:hover {
   color: #ffd800;
+}
+
+.flex-w {
+  flex-wrap: wrap;
 }
