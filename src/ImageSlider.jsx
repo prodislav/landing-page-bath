@@ -13,7 +13,15 @@ export class ImageSlider extends Component {
             return el;
         })
         console.log(document.querySelector('.slick-dots').children)
+        console.log('this.props', this.props)
     }
+
+    handleImageView = (i) => (
+        <div className="q1234" style={{
+            backgroundImage: 'url(' + require(`./images/bath/bath-${this.props.id}-${i + 1}.jpg`) + ')'
+        }}>
+        </div>
+    )
 
     render() {
         const settings = {
@@ -24,23 +32,17 @@ export class ImageSlider extends Component {
             slidesToScroll: 1,
             arrows: false,
             dotsClass: "slick-dots slick-thumb",
-            customPaging: function (i) {
-                return (
-                    <div className="q1234" style={{
-                        backgroundImage: 'url(' + require(`./images/project11-${i + 1}.jpg`) + ')'
-                    }}>
-                    </div>
-                );
-            },
+            id: this.props.id,
+            customPaging: this.handleImageView,
         };
         return (
             <Slider {...settings}>
                 {
-                    [1, 2, 3, 4].map(el => {
+                    this.props.projectPhotos.map(el => {
                         return (
                             <div className="outline-no">
                                 <div className="q123" style={{
-                                    backgroundImage: 'url(' + require(`./images/project11-${el}.jpg`) + ')'
+                                    backgroundImage: 'url(' + require(`./images/bath/${el}`) + ')'
                                 }}>
                                 </div>
                             </div>

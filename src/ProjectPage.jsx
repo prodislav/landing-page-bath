@@ -1,21 +1,23 @@
 import React from 'react';
-import { ImageSlider } from './ImageSlider'
+import { ImageSlider } from './ImageSlider';
+import data from './projects/projects.json';
 
-export const ProjectPage = React.memo(() => {
+export const ProjectPage = React.memo((props) => {
+    const project = data.find(el => el.id === props.match.params.id)
     return (
         <section className="qwer">
             <div className="block-wrapper">
                 <div className="q">
-                    <h1>Название</h1>
+                    <h1>{project.name}</h1>
                 </div>
                 <div className="qq">
                     <div className="qqq">
-                        <ImageSlider />
+                        <ImageSlider {...project} />
                     </div>
                     <div className="qqqq">
                         <div className="m-30">
                             <div className='header-2'>
-                                Название
+                                {project.name}
                             </div>
                             <div className='flex-sb'>
                                 <div className="text-c">Площадь дома:</div>
