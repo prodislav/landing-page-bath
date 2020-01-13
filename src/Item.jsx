@@ -7,7 +7,7 @@ export const Item = React.memo(props => {
     const itemContent = { width: '95%', height: '95%', padding: '2,5%', backgroundColor: '#f2f2f2', position: 'absolute' }
     return (
         <div style={itemWrap} className={`item-wrapper `}>
-            <Link to={`/project/${props.id}`}>
+            <Link to={`/project/${props.id}`} className="flex-sb">
                 <div style={itemContent} className="item-content">
 
                     <div style={{ backgroundImage: `url("./images/bath/${props.defaultPhoto}")` }} className="item-image">
