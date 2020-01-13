@@ -20,7 +20,7 @@ export const App = React.memo(() => {
       <Header />
       <Switch>
         <Route exact path="/" component={Home} />
-        <Route path="/project/1" component={ProjectPage} />
+        <Route path="/project/:id" component={ProjectPage} />
         <Route path="/bathes" component={BathesContainer} />
       </Switch>
     </Router>
