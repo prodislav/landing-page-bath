@@ -9,7 +9,8 @@
             "bath-1-4.jpg"
         ],
         "defaultPhoto": "bath-1-1.jpg",
-        "name": "Баня 1"
+        "name": "Баня 1",
+        "lux-type": "Эконом"
     },
     {
         "id": "2",
@@ -23,7 +24,8 @@
             "bath-2-6.jpg"
         ],
         "defaultPhoto": "bath-2-1.jpg",
-        "name": "Баня 2"
+        "name": "Баня 2",
+        "lux-type": "Оптимал"
     },
     {
         "id": "3",
@@ -33,6 +35,7 @@
             "bath-3-2.jpg"
         ],
         "defaultPhoto": "bath-3-1.jpg",
-        "name": "Баня 3"
+        "name": "Баня 3",
+        "lux-type": "Люкс"
     }
 ]
