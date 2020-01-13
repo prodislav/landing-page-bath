@@ -90,6 +90,12 @@ code {
   color: #333333;
 }
 
+.item-wrapper a {
+  width: 100%;
+  height: 100%;
+  margin-top: 20px;
+}
+
 .header {
   font-size: 1.6em;
   margin: 0 auto;
