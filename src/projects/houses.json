@@ -25,7 +25,7 @@
             "house-2-3.jpg",
             "house-2-4.jpg"
         ],
-        "defaultPhoto": "house-2-2.jpg",
+        "defaultPhoto": "house-2-3.jpg",
         "name": "Оптимал",
         "luxType": "Оптимал",
         "area": "40м"
@@ -40,7 +40,7 @@
             "house-3-4.jpg",
             "house-3-5.jpg"
         ],
-        "defaultPhoto": "house-3-2.jpg",
+        "defaultPhoto": "house-3-4.jpg",
         "name": "Люкс",
         "luxType": "Люкс",
         "area": "60м"
@@ -61,7 +61,7 @@
             "house-4-10.jpg",
             "house-4-11.jpg"
         ],
-        "defaultPhoto": "house-4-2.jpg",
+        "defaultPhoto": "house-4-9.jpg",
         "name": "Люкс",
         "luxType": "Люкс",
         "area": "60м"
