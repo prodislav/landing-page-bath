@@ -1,9 +1,15 @@
 import React from 'react';
 import { ImageSlider } from './ImageSlider';
 import data from './projects/projects.json';
+import houses from './projects/houses.json';
 
 export const ProjectPage = React.memo((props) => {
-    const project = data.find(el => el.id === props.match.params.id)
+    let project
+    if (props.type === 'bath') {
+        project = data.find(el => el.id === props.match.params.id)
+    } else {
+        project = houses.find(el => el.id === props.match.params.id)
+    }
     return (
         <section className="qwer">
             <div className="block-wrapper">
@@ -12,7 +18,7 @@ export const ProjectPage = React.memo((props) => {
                 </div>
                 <div className="qq">
                     <div className="qqq">
-                        <ImageSlider {...project} />
+                        <ImageSlider {...project} type={props.type}/>
                     </div>
                     <div className="qqqq">
                         <div className="m-30">

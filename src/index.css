@@ -518,7 +518,7 @@ code {
   transition: all .3s;
 }
 
-.header__nav>div:hover {
+.header__nav>div:hover, .header__nav>div:hover a {
   color: #ffd800;
   cursor: pointer;
 }

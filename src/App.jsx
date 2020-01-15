@@ -7,6 +7,7 @@ import { Home } from './Home';
 import { ProjectPage } from './ProjectPage';
 import { BathesContainer } from './Bath';
 import { About } from './About';
+import { HousesContainer } from './houses';
 
 WebFont.load({
   google: {
@@ -21,7 +22,9 @@ export const App = React.memo(() => {
       <Header />
       <Switch>
         <Route exact path="/" component={Home} />
-        <Route path="/project/:id" component={ProjectPage} />
+        <Route path="/houses" component={HousesContainer} />
+        <Route path="/bath/:id" component={props => <ProjectPage type="bath" {...props} />} />
+        <Route path="/house/:id" component={props => <ProjectPage type="house" {...props} />} />
         <Route path="/bathes" component={BathesContainer} />
         <Route path="/about" component={About} />
       </Switch>

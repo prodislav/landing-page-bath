@@ -1,9 +1,11 @@
-import React from 'react'
-import { Link } from 'react-router-dom';
+import React from 'react';
 import { ProjectsView } from './ProjectsView';
+import data from './projects/projects.json';
 
 export const BathesContainer = React.memo(() => {
+    const [stateData, setData] = React.useState(false);
+    React.useEffect(() => setData(data.filter(el => el.type === "BATH")), []);
     return (
-        <ProjectsView />
+        <ProjectsView type="bath" data={stateData} />
     )
 })

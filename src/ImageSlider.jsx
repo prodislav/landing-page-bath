@@ -18,7 +18,7 @@ export class ImageSlider extends Component {
 
     handleImageView = (i) => (
         <div className="q1234" style={{
-            backgroundImage: 'url(' + require(`./images/bath/bath-${this.props.id}-${i + 1}.jpg`) + ')'
+            backgroundImage: 'url(' + require(`./images/${this.props.type}/${this.props.type}-${this.props.id}-${i + 1}.jpg`) + ')'
         }}>
         </div>
     )
@@ -42,7 +42,7 @@ export class ImageSlider extends Component {
                         return (
                             <div className="outline-no">
                                 <div className="q123" style={{
-                                    backgroundImage: 'url(' + require(`./images/bath/${el}`) + ')'
+                                    backgroundImage: 'url(' + require(`./images/${this.props.type}/${el}`) + ')'
                                 }}>
                                 </div>
                             </div>
