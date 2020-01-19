@@ -513,9 +513,10 @@ code {
 .header__nav>div {
   display: block;
   line-height: 90px;
-  padding: 0 10px;
   color: #fff;
   transition: all .3s;
+  width: 20%;
+  text-align: center;
 }
 
 .header__nav>div:hover, .header__nav>div:hover a {
