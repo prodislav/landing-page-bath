@@ -1,5 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import { FormView } from './FormView';
 
 export const Home = React.memo(() => {
     return (
@@ -53,6 +54,17 @@ export const Home = React.memo(() => {
                 </div>
 
             </section>
-        </>
+
+            <section className="section">
+                <div className="block-wrapper">
+
+                    <div className="Form-Container border">
+                    <FormView />
+                    </div>
+
+                </div>
+
+            </section>
+            </>
     )
 })

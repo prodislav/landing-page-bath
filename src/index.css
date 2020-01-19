@@ -214,7 +214,26 @@ code {
   left: 0;
   right: 0;
   top: 90px;
-  z-index: 200
+  z-index: 10000;
+}
+
+.border {
+  border: 3px solid #e2e2e3;
+}
+
+.about p {
+  font-size: 18px;
+  font-weight: 300;
+}
+
+.about h6 {
+  font-size: 20px;
+  font-weight: 400;
+  margin: 5px;
+}
+
+.about ul {
+  margin: 0;
 }
 
 .p-r {
@@ -425,6 +444,88 @@ code {
   margin: 20px 0;
   height: 50px;
   box-shadow: 0 0 10px 1px #d6d6d6;
+}
+
+.Form-Cotnainer {
+  width: 100%;
+  background-color: white;
+  margin-top: 20px;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  height: 200px;
+  padding: 20px;
+}
+
+.form .h2 {
+  font-size: 30px;
+  text-align: center;
+  letter-spacing: 0.1em;
+  color: #444444;
+}
+
+.form .desc {
+  font-size: 16px;
+  text-align: center;
+  letter-spacing: 0.1em;
+  color: #444444;
+}
+
+.form .button {
+  text-align: center;
+  display: inline-block;
+  font: bold 1.25rem/3.125rem 'PT Sans Narrow', sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  background: #ffd800;
+  color: #2b2b2f;
+  padding-left: 43px;
+  padding-right: 43px;
+  transition: all .2s;
+  border: none;
+  width: 240px;
+}
+
+.button:hover {
+  opacity: 0.9;
+  color: #2b2b2f;
+}
+
+div.slick-prev:before, div.slick-next:before {
+  content: '';
+  height: 100%;
+}
+
+div.slick-arrow {
+  display: block!important;
+  z-index: 1000!important;
+  width: 50%!important;
+  height: 100%!important;
+}
+
+div.slick-prev {
+  left: 0!important;
+}
+
+div.slick-next {
+  right: 0!important;
+}
+
+.dots {
+  color: #FFF;
+  border: 2px solid #FFF;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  margin-top: -35px;
+}
+
+.slick-active .dots {
+  background: #FFF;
 }
 
 .q>h1 {

@@ -9,9 +9,19 @@
             "house-1-4.jpg",
             "house-1-5.jpg",
             "house-1-6.jpg",
-            "house-1-7.jpg"
+            "house-1-7.jpg",
+            "house-1-8.jpg",
+            "house-1-9.jpg",
+            "house-1-10.jpg",
+            "house-1-11.jpg",
+            "house-1-12.jpg",
+            "house-1-13.jpg",
+            "house-1-14.jpg",
+            "house-1-15.jpg",
+            "house-1-16.jpg",
+            "house-1-17.jpg"
         ],
-        "defaultPhoto": "house-1-2.jpg",
+        "defaultPhoto": "house-1-17.jpg",
         "name": "Эконом",
         "luxType": "Эконом",
         "area": "20м"
@@ -65,5 +75,128 @@
         "name": "Люкс",
         "luxType": "Люкс",
         "area": "60м"
+    },
+    {
+        "id": "5",
+        "type": "HOUSE",
+        "projectPhotos": [
+            "house-5-1.jpg",
+            "house-5-2.jpg",
+            "house-5-3.jpg",
+            "house-5-4.jpg",
+            "house-5-5.jpg",
+            "house-5-6.jpg",
+            "house-5-7.jpg",
+            "house-5-8.jpg",
+            "house-5-9.jpg",
+            "house-5-10.jpg",
+            "house-5-11.jpg",
+            "house-5-12.jpg"
+        ],
+        "defaultPhoto": "house-5-11.jpg",
+        "name": "Люкс",
+        "luxType": "Люкс",
+        "area": "60м"
+    },
+    {
+        "id": "6",
+        "type": "HOUSE",
+        "projectPhotos": [
+            "house-6-1.jpg",
+            "house-6-2.jpg",
+            "house-6-3.jpg",
+            "house-6-4.jpg",
+            "house-6-5.jpg",
+            "house-6-6.jpg",
+            "house-6-7.jpg",
+            "house-6-8.jpg",
+            "house-6-9.jpg",
+            "house-6-10.jpg",
+            "house-6-11.jpg",
+            "house-6-12.jpg",
+            "house-6-13.jpg"
+        ],
+        "defaultPhoto": "house-6-12.jpg",
+        "name": "Люкс",
+        "luxType": "Люкс",
+        "area": "60м"
+    },
+    {
+        "id": "7",
+        "type": "HOUSE",
+        "projectPhotos": [
+            "house-7-1.jpg",
+            "house-7-2.jpg",
+            "house-7-3.jpg",
+            "house-7-4.jpg"
+        ],
+        "defaultPhoto": "house-7-3.jpg",
+        "name": "Люкс",
+        "luxType": "Люкс",
+        "area": "60м"
+    },
+    {
+        "id": "8",
+        "type": "HOUSE",
+        "projectPhotos": [
+            "house-8-1.jpg",
+            "house-8-2.jpg",
+            "house-8-3.jpg",
+            "house-8-4.jpg",
+            "house-8-5.jpg",
+            "house-8-6.jpg"
+        ],
+        "defaultPhoto": "house-8-3.jpg",
+        "name": "Люкс",
+        "luxType": "Люкс",
+        "area": "60м"
+    },
+    {
+        "id": "9",
+        "type": "HOUSE",
+        "projectPhotos": [
+            "house-9-1.jpg",
+            "house-9-2.jpg",
+            "house-9-3.jpg",
+            "house-9-4.jpg",
+            "house-9-5.jpg",
+            "house-9-6.jpg",
+            "house-9-7.jpg"
+        ],
+        "defaultPhoto": "house-9-3.jpg",
+        "name": "Люкс",
+        "luxType": "Люкс",
+        "area": "60м"
+    },
+    {
+        "id": "10",
+        "type": "HOUSE",
+        "projectPhotos": [
+            "house-10-1.jpg",
+            "house-10-2.jpg",
+            "house-10-3.jpg",
+            "house-10-4.jpg",
+            "house-10-5.jpg"
+        ],
+        "defaultPhoto": "house-10-2.jpg",
+        "name": "Люкс",
+        "luxType": "Люкс",
+        "area": "60м"
+    },
+    {
+    "id": "11",
+    "type": "HOUSE",
+    "projectPhotos": [
+        "house-11-1.jpg",
+        "house-11-2.jpg",
+        "house-11-3.jpg",
+        "house-11-4.jpg",
+        "house-11-5.jpg",
+        "house-11-6.jpg"
+    ],
+    "defaultPhoto": "house-11-3.jpg",
+    "name": "Люкс",
+    "luxType": "Люкс",
+    "area": "60м"
     }
 ]
