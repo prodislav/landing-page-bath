@@ -75,10 +75,17 @@ export const NewProjectPage = React.memo((props) => {
                                 </div>
                                 : null
                             }
+                            <div class="detail_area col-md-12">
+                                {project.price}
+                            </div>
+
+                            <a className="button">
+                                ПОЛУЧИТЬ КОНСУЛЬТАЦИЮ
+                            </a>
                         </div>
                     </div>
 
-                    <div className='line'></div>
+
                     <Tabs className="w-100">
                         <TabList>
                             <Tab>Планировка</Tab>
