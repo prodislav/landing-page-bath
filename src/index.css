@@ -635,9 +635,48 @@ div.slick-next {
 
 .flex-w {
   flex-wrap: wrap;
+
+
+}
+.text-header {
+  text-align: center;
+  font-size: 30px;
+  padding: 20px 0 0;
+  margin: 0;
+}
+
+.description-block {
+  background-color: #F1F5F9;
+    margin: 20px 0 0;
+}
+
+.description-text {
+  font-size: 18px;
+    padding: 20px;
+}
+
+li.react-tabs__tab--selected {
+  color: rgb(88, 118, 64);
+  border-top: none;
+  border-right: none;
+  border-bottom: 5px solid rgb(88, 118, 64);
+  border-left: none;
+  border-image: initial;
+  background-color: rgb(255, 255, 255);
+}
+
+li.react-tabs__tab {
+  font-size: 20px;
+}
+
+.w-100-1 {
+  width: 100%;
 }
 
 @media (min-width: 768px) {
+  .w-100-1 {
+    width: 50%;
+  }
   .qqqq {
     padding-top: 30px;
   }
@@ -687,39 +726,4 @@ div.slick-next {
   .item-wrapper {
     width: 33.33%!important;
   }
-}
-
-.text-header {
-  text-align: center;
-  font-size: 30px;
-  padding: 20px 0 0;
-  margin: 0;
-}
-
-.description-block {
-  background-color: #F1F5F9;
-    margin: 20px 0 0;
-}
-
-.description-text {
-  font-size: 18px;
-    padding: 20px;
-}
-
-li.react-tabs__tab--selected {
-  color: rgb(88, 118, 64);
-  border-top: none;
-  border-right: none;
-  border-bottom: 5px solid rgb(88, 118, 64);
-  border-left: none;
-  border-image: initial;
-  background-color: rgb(255, 255, 255);
-}
-
-li.react-tabs__tab {
-  font-size: 20px;
-}
-
-.w-100 {
-  width: 100%;
 }

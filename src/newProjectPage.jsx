@@ -28,7 +28,7 @@ export const NewProjectPage = React.memo((props) => {
                             240м<sup>2</sup>
                         </div>
                         <div className="m-30 flex-sb flex-w">
-                            <div className='flex-c w-50 flex-r m-bot w-100'>
+                            <div className='flex-c w-50 flex-r m-bot w-100-1'>
                                 <div className="flex f-s-50">
                                     4
                                     <ReactSVG beforeInjection={svg => {
@@ -38,7 +38,7 @@ export const NewProjectPage = React.memo((props) => {
                                 </div>
                                 <span className="f-s-24">комнат</span>
                             </div>
-                            <div className='flex-c w-50 flex-r m-bot w-100'>
+                            <div className='flex-c w-50 flex-r m-bot w-100-1'>
                                 <div className="flex f-s-50">
                                     4
                                     <ReactSVG beforeInjection={svg => {
@@ -48,7 +48,7 @@ export const NewProjectPage = React.memo((props) => {
                                 </div>
                                 <span className="f-s-24">санузла</span>
                             </div>
-                            <div className='flex-c w-50 flex-r m-bot w-100'>
+                            <div className='flex-c w-50 flex-r m-bot w-100-1'>
                                 <div className="flex f-s-50">
                                     4
                                     <ReactSVG beforeInjection={svg => {
@@ -58,7 +58,7 @@ export const NewProjectPage = React.memo((props) => {
                                 </div>
                                 <span className="f-s-24">балкона</span>
                             </div>
-                            <div className='flex-c w-50 flex-r m-bot w-100'>
+                            <div className='flex-c w-50 flex-r m-bot w-100-1'>
                                 <div className="flex f-s-50">
                                     4
                                     <ReactSVG beforeInjection={svg => {
@@ -107,11 +107,11 @@ export const NewProjectPage = React.memo((props) => {
 
                         <TabPanel>
                             {
-                                ['house-1-1.jpg', 'house-1-2.jpg', 'house-1-3.jpg', 'house-1-4.jpg'].map(el => {
+                                ['p-1.jpg', 'p-2.jpg'].map(el => {
                                     return (
                                         <div className="outline-no">
                                             <div className="q123" style={{
-                                                backgroundImage: 'url(' + require(`./images/house/${el}`) + ')'
+                                                backgroundImage: 'url(' + require(`./images/${el}`) + ')'
                                             }}>
                                             </div>
                                         </div>
@@ -121,11 +121,11 @@ export const NewProjectPage = React.memo((props) => {
                         </TabPanel>
                         <TabPanel>
                             {
-                                ['house-1-1.jpg', 'house-1-2.jpg', 'house-1-3.jpg', 'house-1-4.jpg'].map(el => {
+                                ['f-1.jpg', 'f-2.jpg', 'f-3.jpg', 'f-4.jpg'].map(el => {
                                     return (
                                         <div className="outline-no">
                                             <div className="q123" style={{
-                                                backgroundImage: 'url(' + require(`./images/house/${el}`) + ')'
+                                                backgroundImage: 'url(' + require(`./images/${el}`) + ')'
                                             }}>
                                             </div>
                                         </div>
@@ -135,11 +135,11 @@ export const NewProjectPage = React.memo((props) => {
                         </TabPanel>
                         <TabPanel>
                             {
-                                ['house-1-1.jpg', 'house-1-2.jpg', 'house-1-3.jpg', 'house-1-4.jpg'].map(el => {
+                                ['r-1.jpg', 'r-2.jpg', 'r-3.jpg'].map(el => {
                                     return (
                                         <div className="outline-no">
                                             <div className="q123" style={{
-                                                backgroundImage: 'url(' + require(`./images/house/${el}`) + ')'
+                                                backgroundImage: 'url(' + require(`./images/${el}`) + ')'
                                             }}>
                                             </div>
                                         </div>
@@ -149,11 +149,11 @@ export const NewProjectPage = React.memo((props) => {
                         </TabPanel>
                         <TabPanel>
                             {
-                                ['house-1-1.jpg', 'house-1-2.jpg', 'house-1-3.jpg', 'house-1-4.jpg'].map(el => {
+                                ['interer1.jpg', 'interer2.jpg','interer3.jpg','interer4.jpg','interer5.jpg','interer6.jpg', 'interer7.jpg'].map(el => {
                                     return (
                                         <div className="outline-no">
                                             <div className="q123" style={{
-                                                backgroundImage: 'url(' + require(`./images/house/${el}`) + ')'
+                                                backgroundImage: 'url(' + require(`./images/${el}`) + ')'
                                             }}>
                                             </div>
                                         </div>
