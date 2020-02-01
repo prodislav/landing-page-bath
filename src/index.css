@@ -434,14 +434,12 @@ code {
 .qwer {
   margin-top: 90px;
   height: calc(100vh - 10.5em);
-  background-color: #F1F5F9;
 }
 
 .q {
   background-color: white;
   margin: 20px 0;
   height: 50px;
-  box-shadow: 0 0 10px 1px #d6d6d6;
 }
 
 .Form-Cotnainer {
@@ -527,14 +525,14 @@ div.slick-next {
 }
 
 .q>h1 {
-  text-align: center;
-  font-size: 2.4em;
-  line-height: 2.1;
+  text-align: left;
+  padding-left: 50px;
+  font-size: 3.5em;
 }
 
 .qq {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
 }
 
 .qqq {
@@ -677,9 +675,6 @@ li.react-tabs__tab {
   .w-100-1 {
     width: 50%;
   }
-  .qqqq {
-    padding-top: 30px;
-  }
 
   .detail_area {
     text-align: center;
@@ -726,4 +721,9 @@ li.react-tabs__tab {
   .item-wrapper {
     width: 33.33%!important;
   }
+}
+
+
+.qwer > .block-wrapper {
+  width: 100%;
 }

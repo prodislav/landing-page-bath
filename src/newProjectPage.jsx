@@ -27,7 +27,7 @@ export const NewProjectPage = React.memo((props) => {
                         <div class="detail_area col-md-12">
                             240м<sup>2</sup>
                         </div>
-                        <div className="m-30 flex-sb flex-w">
+                        <div className="flex-sb flex-w">
                             <div className='flex-c w-50 flex-r m-bot w-100-1'>
                                 <div className="flex f-s-50">
                                     4
