@@ -10,6 +10,26 @@ a {
   color: #333;
 }
 
+.outline-no div {
+  background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.outline-no {
+  width: 45%;
+}
+
+.outline-no > .q123 {
+  height: 350px;
+}
+
+div.react-tabs__tab-panel {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
 ul {
   margin: 0;
   padding: 0;
@@ -538,7 +558,6 @@ div.slick-next {
 .qqq {
   width: 850px;
   min-height: 310px;
-  background-color: #F1F5F9;
 }
 
 .qqqq {
