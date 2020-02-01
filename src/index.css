@@ -29,7 +29,7 @@ div.react-tabs__tab-panel {
   flex-wrap: wrap;
   justify-content: space-evenly;
 }
-div.react-tab-list {
+ul.react-tabs__tab-list {
   display: flex;
   justify-content: center;
   margin: 20px 0;
@@ -49,6 +49,11 @@ code {
   height: 550px;
   background-position: center center;
   background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.slick-list .q123 {
+  height: 550px;
   background-size: cover;
 }
 
