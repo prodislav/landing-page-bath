@@ -13,6 +13,8 @@
     "react-router-dom": "^5.1.2",
     "react-scripts": "3.3.0",
     "react-slick": "^0.25.2",
+    "react-svg": "^11.0.9",
+    "react-tabs": "^3.1.0",
     "slick-carousel": "^1.8.1",
     "webfontloader": "^1.6.28"
   },

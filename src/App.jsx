@@ -8,6 +8,7 @@ import { ProjectPage } from './ProjectPage';
 import { BathesContainer } from './Bath';
 import { About } from './About';
 import { HousesContainer } from './houses';
+import { NewProjectPage } from './newProjectPage';
 
 WebFont.load({
   google: {
@@ -24,7 +25,7 @@ export const App = React.memo(() => {
         <Route exact path="/" component={Home} />
         <Route path="/houses" component={HousesContainer} />
         <Route path="/bath/:id" component={props => <ProjectPage type="bath" {...props} />} />
-        <Route path="/house/:id" component={props => <ProjectPage type="house" {...props} />} />
+        <Route path="/house/:id" component={props => (props.match.params.id === "4" ? <NewProjectPage type="house" {...props} /> : <ProjectPage type="house" {...props} />)} />
         <Route path="/bathes" component={BathesContainer} />
         <Route path="/about" component={About} />
       </Switch>

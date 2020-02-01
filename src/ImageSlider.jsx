@@ -4,17 +4,17 @@ import 'slick-carousel/slick/slick-theme.css';
 import 'slick-carousel/slick/slick.css';
 
 export class ImageSlider extends Component {
-    componentDidMount() {
-        [].slice.call(document.querySelectorAll('.slick-dots > li')).map(el => {
-            el.style.width = '100px'
-            el.style.height = '100px'
-            el.style.border = '1px solid white'
+    // componentDidMount() {
+    //     [].slice.call(document.querySelectorAll('.slick-dots > li')).map(el => {
+    //         el.style.width = '100px'
+    //         el.style.height = '100px'
+    //         el.style.border = '1px solid white'
 
-            return el;
-        })
-        console.log(document.querySelector('.slick-dots').children)
-        console.log('this.props', this.props)
-    }
+    //         return el;
+    //     })
+    //     console.log(document.querySelector('.slick-dots').children)
+    //     console.log('this.props', this.props)
+    // }
 
     handleImageView = (i) => (
         <div className="q1234" style={{
@@ -33,7 +33,7 @@ export class ImageSlider extends Component {
             arrows: false,
             dotsClass: "slick-dots slick-thumb",
             id: this.props.id,
-            customPaging: this.handleImageView,
+            // customPaging: this.handleImageView,
         };
         return (
             <Slider {...settings}>
@@ -46,9 +46,6 @@ export class ImageSlider extends Component {
                                 }}>
                                 </div>
                             </div>
-                            // <div className='q123' style={{backgroundColor:`url('/images/project11-${el}.jpg')!important`}}>
-                            //     {/* <img src={'/images/project11-' + el + '.jpg'} height='500' /> */}
-                            // </div>
                         )
                     })
                 }
