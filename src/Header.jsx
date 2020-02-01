@@ -15,9 +15,6 @@ export const Header = React.memo(() => {
                                     <div className='p-a image-text'>
                                         Проекты домов
                                     </div>
-                                    <div className='p-a image-cost'>
-                                        $$$
-                                </div>
                                 </div>
 
                             </Link>
@@ -29,9 +26,6 @@ export const Header = React.memo(() => {
                                     <div className="image-shadow"></div>
                                     <div className='p-a image-text'>
                                         Проекты бань
-                                </div>
-                                    <div className='p-a image-cost'>
-                                        $$
                                 </div>
                                 </div>
 
@@ -62,8 +56,8 @@ export const Header = React.memo(() => {
                             <div>Контакты</div>
                         </nav>
 
-                        <a href="tel:+78003331111" className="header__link header--font">
-                            <span>8-800-333-11-11</span>
+                        <a href="tel:+375339041280" className="header__link header--font">
+                            <span>+375-33-904-12-80</span>
                         </a>
 
                     </div>

@@ -32,9 +32,6 @@ export const Home = React.memo(() => {
                                     <div className='p-a image-text'>
                                         Проекты домов
                                     </div>
-                                    <div className='p-a image-cost'>
-                                        $$$
-                                </div>
                                 </div>
 
                             </Link>
@@ -46,9 +43,6 @@ export const Home = React.memo(() => {
                             <div className='p-a image-text'>
                                 Проекты бань
                             </div>
-                            <div className='p-a image-cost'>
-                                $$
-                                </div>
                         </div>
                     </div>
                 </div>
