@@ -3,25 +3,30 @@ import Slider from "react-slick";
 import 'slick-carousel/slick/slick-theme.css';
 import 'slick-carousel/slick/slick.css';
 
+
+function SamplePrevArrow(props) {
+    const { onClick } = props;
+    return (
+        <div
+            className="slick-prev slick-arrow"
+            onClick={onClick}
+        />
+    );
+}
+
+function SampleNextArrow(props) {
+    const { onClick } = props;
+    return (
+        <div
+            className="slick-next slick-arrow"
+            onClick={onClick}
+        />
+    );
+}
+
 export class ImageSlider extends Component {
-    // componentDidMount() {
-    //     [].slice.call(document.querySelectorAll('.slick-dots > li')).map(el => {
-    //         el.style.width = '100px'
-    //         el.style.height = '100px'
-    //         el.style.border = '1px solid white'
-
-    //         return el;
-    //     })
-    //     console.log(document.querySelector('.slick-dots').children)
-    //     console.log('this.props', this.props)
-    // }
-
-    handleImageView = (i) => (
-        <div className="q1234" style={{
-            backgroundImage: 'url(' + require(`./images/${this.props.type}/${this.props.type}-${this.props.id}-${i + 1}.jpg`) + ')'
-        }}>
-        </div>
-    )
+    componentDidMount() {
+    }
 
     render() {
         const settings = {
@@ -30,10 +35,12 @@ export class ImageSlider extends Component {
             speed: 500,
             slidesToShow: 1,
             slidesToScroll: 1,
-            arrows: false,
+            arrows: true,
             dotsClass: "slick-dots slick-thumb",
             id: this.props.id,
-            // customPaging: this.handleImageView,
+            customPaging: param => <div className="dots">{console.log(param)}</div>,
+            nextArrow: <SampleNextArrow />,
+            prevArrow: <SamplePrevArrow />
         };
         return (
             <Slider {...settings}>

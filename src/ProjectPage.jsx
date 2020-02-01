@@ -1,5 +1,6 @@
 import React from 'react';
 import { ImageSlider } from './ImageSlider';
+import { FormView } from './FormView';
 import data from './projects/projects.json';
 import houses from './projects/houses.json';
 
@@ -57,6 +58,10 @@ export const ProjectPage = React.memo((props) => {
                             </ul>
                         </div>
                     </div>
+                </div>
+
+                <div className="Form-Cotnainer">
+                    <FormView />
                 </div>
             </div>
         </section>
