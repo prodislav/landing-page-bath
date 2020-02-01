@@ -13,11 +13,12 @@ export const NewProjectPage = React.memo((props) => {
     } else {
         project = houses.find(el => el.id === props.match.params.id)
     }
+    const projectName = `Проект П-${project.area}`
     return (
         <section className="qwer">
             <div className="block-wrapper">
                 <div className="q">
-                    <h1>{project.name}</h1>
+                    <h1>{projectName}</h1>
                 </div>
                 <div className="qq">
                     <div className="qqq">
@@ -25,12 +26,12 @@ export const NewProjectPage = React.memo((props) => {
                     </div>
                     <div className="qqqq">
                         <div class="detail_area col-md-12">
-                            240м<sup>2</sup>
+                            {project.area}м<sup>2</sup>
                         </div>
                         <div className="flex-sb flex-w">
                             <div className='flex-c w-50 flex-r m-bot w-100-1'>
                                 <div className="flex f-s-50">
-                                    4
+                                    {project.rooms}
                                     <ReactSVG beforeInjection={svg => {
                                         svg.classList.add('svg-class-name')
                                         svg.setAttribute('style', 'width: 50px')
@@ -40,7 +41,7 @@ export const NewProjectPage = React.memo((props) => {
                             </div>
                             <div className='flex-c w-50 flex-r m-bot w-100-1'>
                                 <div className="flex f-s-50">
-                                    4
+                                    {project.wc}
                                     <ReactSVG beforeInjection={svg => {
                                         svg.classList.add('svg-class-name')
                                         svg.setAttribute('style', 'width: 50px')
@@ -48,26 +49,32 @@ export const NewProjectPage = React.memo((props) => {
                                 </div>
                                 <span className="f-s-24">санузла</span>
                             </div>
-                            <div className='flex-c w-50 flex-r m-bot w-100-1'>
-                                <div className="flex f-s-50">
-                                    4
-                                    <ReactSVG beforeInjection={svg => {
-                                        svg.classList.add('svg-class-name')
-                                        svg.setAttribute('style', 'width: 50px')
-                                    }} src="/images/balcony.svg" />
+                            {project.balcony ?
+                                <div className='flex-c w-50 flex-r m-bot w-100-1'>
+                                    <div className="flex f-s-50">
+                                        {project.balcony}
+                                        <ReactSVG beforeInjection={svg => {
+                                            svg.classList.add('svg-class-name')
+                                            svg.setAttribute('style', 'width: 50px')
+                                        }} src="/images/balcony.svg" />
+                                    </div>
+                                    <span className="f-s-24">балкона</span>
                                 </div>
-                                <span className="f-s-24">балкона</span>
-                            </div>
-                            <div className='flex-c w-50 flex-r m-bot w-100-1'>
-                                <div className="flex f-s-50">
-                                    4
-                                    <ReactSVG beforeInjection={svg => {
-                                        svg.classList.add('svg-class-name')
-                                        svg.setAttribute('style', 'width: 50px')
-                                    }} src="/images/terrace.svg" />
+                                : null
+                            }
+                            {project.terrace ?
+                                <div className='flex-c w-50 flex-r m-bot w-100-1'>
+                                    <div className="flex f-s-50">
+                                        {project.terrace}
+                                        <ReactSVG beforeInjection={svg => {
+                                            svg.classList.add('svg-class-name')
+                                            svg.setAttribute('style', 'width: 50px')
+                                        }} src="/images/terrace.svg" />
+                                    </div>
+                                    <span className="f-s-24">терраса</span>
                                 </div>
-                                <span className="f-s-24">терраса</span>
-                            </div>
+                                : null
+                            }
                         </div>
                     </div>
 
@@ -82,11 +89,11 @@ export const NewProjectPage = React.memo((props) => {
 
                         <TabPanel>
                             {
-                                ['p-1.jpg', 'p-2.jpg'].map(el => {
+                                project.plans.map(el => {
                                     return (
                                         <div className="outline-no">
                                             <div className="q123" style={{
-                                                backgroundImage: 'url(' + require(`./images/${el}`) + ')'
+                                                backgroundImage: 'url(' + require(`./images/${props.type}/${project.id}/${el}`) + ')'
                                             }}>
                                             </div>
                                         </div>
@@ -96,11 +103,11 @@ export const NewProjectPage = React.memo((props) => {
                         </TabPanel>
                         <TabPanel>
                             {
-                                ['f-1.jpg', 'f-2.jpg', 'f-3.jpg', 'f-4.jpg'].map(el => {
+                                project.facades.map(el => {
                                     return (
                                         <div className="outline-no">
                                             <div className="q123" style={{
-                                                backgroundImage: 'url(' + require(`./images/${el}`) + ')'
+                                                backgroundImage: 'url(' + require(`./images/${props.type}/${project.id}/${el}`) + ')'
                                             }}>
                                             </div>
                                         </div>
@@ -110,11 +117,11 @@ export const NewProjectPage = React.memo((props) => {
                         </TabPanel>
                         <TabPanel>
                             {
-                                ['r-1.jpg', 'r-2.jpg', 'r-3.jpg'].map(el => {
+                                project.realization.map(el => {
                                     return (
                                         <div className="outline-no">
                                             <div className="q123" style={{
-                                                backgroundImage: 'url(' + require(`./images/${el}`) + ')'
+                                                backgroundImage: 'url(' + require(`./images/${props.type}/${project.id}/${el}`) + ')'
                                             }}>
                                             </div>
                                         </div>
@@ -124,11 +131,11 @@ export const NewProjectPage = React.memo((props) => {
                         </TabPanel>
                         <TabPanel>
                             {
-                                ['interer1.jpg', 'interer2.jpg','interer3.jpg','interer4.jpg','interer5.jpg','interer6.jpg', 'interer7.jpg'].map(el => {
+                                project.interier.map(el => {
                                     return (
                                         <div className="outline-no">
                                             <div className="q123" style={{
-                                                backgroundImage: 'url(' + require(`./images/${el}`) + ')'
+                                                backgroundImage: 'url(' + require(`./images/${props.type}/${project.id}/${el}`) + ')'
                                             }}>
                                             </div>
                                         </div>
@@ -138,7 +145,7 @@ export const NewProjectPage = React.memo((props) => {
                         </TabPanel>
                     </Tabs>
                     <div className="description-block">
-                        <h2 className="text-header">Проект «КФ-4» серии «Барнхауз»</h2>
+                        <h2 className="text-header">{projectName}</h2>
                         <div className="description-text">
                             <p>В разработке этого проекта дома из кирпича и клееного бруса по технологии фахверк преследовалась цель создания максимально комфортного жилья и ставились задачи сделать дом серии Barn house теплым и светлым, при этом доступным по цене.</p>
                             <p>В проекте применены две технологии строительства: первый этаж сооружается из крупноформатных керамических блоков Porotherm 38 Thermo, а второй — по разновидности фахверковой технологии (рамная технология Timber Frame, или фреймверк), основа которой — мощные рамы из клееного бруса. Блоки первого этажа не требуют утепления (при строительстве в средней полосе), а стены второго этажа и крыша имеют утепление 250 мм, что делает этот барнхауз очень энергоэффективным.</p>

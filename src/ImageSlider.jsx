@@ -45,11 +45,11 @@ export class ImageSlider extends Component {
         return (
             <Slider {...settings}>
                 {
-                    this.props.projectPhotos.map(el => {
+                    this.props.main.map(el => {
                         return (
                             <div className="outline-no">
                                 <div className="q123" style={{
-                                    backgroundImage: 'url(' + require(`./images/${this.props.type}/${el}`) + ')'
+                                    backgroundImage: 'url(' + require(`./images/${this.props.type}/${this.props.id}/${el}`) + ')'
                                 }}>
                                 </div>
                             </div>
