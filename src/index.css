@@ -263,6 +263,10 @@ code {
   margin-bottom: 35px;
 }
 
+.m-t-100 {
+  margin-top: 100px;
+}
+
 .detail_area {
   font-size: 40px;
   font-weight: bold;

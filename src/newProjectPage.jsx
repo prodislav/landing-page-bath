@@ -75,7 +75,7 @@ export const NewProjectPage = React.memo((props) => {
                                 </div>
                                 : null
                             }
-                            <div class="detail_area col-md-12">
+                            <div class="detail_area col-md-12 m-t-100">
                                 {project.price}
                             </div>
 
