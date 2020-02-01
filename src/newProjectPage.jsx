@@ -101,7 +101,7 @@ export const NewProjectPage = React.memo((props) => {
                                 <Tab>Планировка</Tab>
                                 <Tab>Фасады</Tab>
                                 <Tab>Реализация</Tab>
-                                <Tab>Планировка</Tab>
+                                <Tab>Интерьер</Tab>
                             </TabList>
 
                             <TabPanel>
