@@ -29,6 +29,11 @@ div.react-tabs__tab-panel {
   flex-wrap: wrap;
   justify-content: space-evenly;
 }
+div.react-tab-list {
+  display: flex;
+  justify-content: center;
+  margin: 20px 0;
+}
 
 ul {
   margin: 0;
