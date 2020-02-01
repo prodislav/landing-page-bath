@@ -529,7 +529,7 @@ code {
   text-align: center;
 text-transform: uppercase;
 letter-spacing: 0.06em;
-background: #ffd800;
+background: #DA8A16;
   margin-left: 20px;
 }
 
@@ -576,8 +576,7 @@ div.slick-next {
 }
 
 .q>h1 {
-  text-align: left;
-  padding-left: 50px;
+  text-align: center;
   font-size: 3.5em;
 }
 
