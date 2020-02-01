@@ -128,13 +128,6 @@ code {
   cursor: pointer;
 }
 
-/* .hover-effect {
-  height: 100%;
-  position: relative;
-  background-color: rgba(255, 255, 255, 0.1);
-  cursor: pointer;
-} */
-
 .item-wrapper {
   position: relative;
 }
@@ -264,7 +257,7 @@ code {
 }
 
 .m-t-100 {
-  margin-top: 100px;
+  margin-top: 196px;
 }
 
 .detail_area {

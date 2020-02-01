@@ -5,6 +5,7 @@ export const Item = React.memo(props => {
     console.log(props)
     const itemWrap = { width: '50%', height: '300px', display: 'flex', justifyContent: 'center', alignItems: 'center' }
     const itemContent = { width: '95%', height: '95%', padding: '2,5%', backgroundColor: '#f2f2f2', position: 'absolute' }
+    const projectName = `Проект П-${props.area}`
     return (
         <div style={itemWrap} className={`item-wrapper `}>
             <Link to={`/${props.type}/${props.id}`} className="flex-c">
@@ -15,10 +16,10 @@ export const Item = React.memo(props => {
                     </div>
                     <div style={{ margin: '0px' }} className="item-title t-align-c">
                         <div className="hover-effect"></div>
-                        <div>{props.name}</div>
+                        <div>{projectName}</div>
                         <div className="flex-sb">
                             <span className="item-price">
-                                Цена
+                                {props.price}
             </span>
                             <span className="item-area">
                                 {props.area}
