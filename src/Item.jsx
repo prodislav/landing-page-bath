@@ -11,7 +11,9 @@ export const Item = React.memo(props => {
             <Link to={`/${props.type}/${props.id}`} className="flex-c">
                 <div style={itemContent} className="item-content">
 
-                    <div style={{ backgroundImage: `url("./images/${props.type}/${props.defaultPhoto}")` }} className="item-image">
+
+                    {console.log('props', props)}
+                    <div style={{ backgroundImage: 'url(' + require(`./images/${props.type}/${props.id}/${props.defaultPhoto}`) + ')' }} className="item-image">
                         <div className="hover-effect"></div>
                     </div>
                     <div style={{ margin: '0px' }} className="item-title t-align-c">
