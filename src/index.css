@@ -769,7 +769,37 @@ li.react-tabs__tab {
   }
 }
 
+.h1 {
+  font-size: 40px;
+  font-weight: 500;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: left;
+  color: #333333;
+  margin-bottom: 35px;
+}
 
+.h2 {
+  font-size: 20px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: left;
+  color: #333333;
+  margin-top: -14px !important;
+}
+
+.calc-class {
+  background-repeat: no-repeat;
+  background-position: 180px center;
+  height: 637px;
+  padding-top: 55px;
+  margin-top: -4px;
+}
 .qwer > .block-wrapper {
   width: 100%;
 }

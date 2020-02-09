@@ -26,7 +26,7 @@ export const Home = React.memo(() => {
                     <h1 className="main-section-title">Дома и бани по канадской технологии</h1>
                     <div className="flex-sb m-3">
                         <div className="w-50 h-350 p-r">
-                        <Link to="/project/1">
+                            <Link to="/project/1">
                                 <div className="image i-13">
                                     <div className="image-shadow"></div>
                                     <div className='p-a image-text'>
@@ -50,15 +50,41 @@ export const Home = React.memo(() => {
             </section>
 
             <section className="section">
+                <div className="block-wrapper calc-class" style={{
+                    backgroundImage: 'url(' + require(`./images/9efbd7b4211e1588942e187fb19f71af.png`) + ')'
+                }}>
+                    <div style={{ width: "33%"}}>
+                    <h2 className="h1">Уже сделали расчёт в другой компании?</h2>
+                    <div>
+                        <p className="h2">
+                            Никогда не поздно найти более
+                            интересные условия и избежать
+                            уловок строителей.
+                        </p>
+
+                        <p className="h2">
+                            Мы сделаем бесплатный аудит
+                            сметы и укажем на возможные
+                            подводные камни.
+                        </p>
+                    </div>
+
+
+                    </div>
+                </div>
+
+            </section>
+
+            <section className="section">
                 <div className="block-wrapper">
 
                     <div className="Form-Container border">
-                    <FormView />
+                        <FormView />
                     </div>
 
                 </div>
 
             </section>
-            </>
+        </>
     )
 })
