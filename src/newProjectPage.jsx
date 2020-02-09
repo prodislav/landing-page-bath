@@ -88,15 +88,15 @@ export const NewProjectPage = React.memo((props) => {
 
                     <Tabs className="w-100">
                         <TabList>
-                            <Tab>Планировка</Tab>
-                            <Tab>Фасады</Tab>
-                            <Tab>Реализация</Tab>
-                            <Tab>Интерьер</Tab>
+                            {project.plans && !!project.plans.length && <Tab>Планировка</Tab>}
+                            {project.facades && !!project.facades.length && <Tab>Фасады</Tab>}
+                            {project.realization && !!project.realization.length && <Tab>Реализация</Tab>}
+                            {project.interier && !!project.interier.length && <Tab>Интерьер</Tab>}
                         </TabList>
 
                         <TabPanel>
                             {
-                                project.plans.map(el => {
+                                project.plans && !!project.plans.length && project.plans.map(el => {
                                     return (
                                         <div className="outline-no">
                                             <div className="q123" style={{
@@ -110,7 +110,7 @@ export const NewProjectPage = React.memo((props) => {
                         </TabPanel>
                         <TabPanel>
                             {
-                                project.facades.map(el => {
+                                project.facades && project.facades.length && project.facades.map(el => {
                                     return (
                                         <div className="outline-no">
                                             <div className="q123" style={{
@@ -124,7 +124,7 @@ export const NewProjectPage = React.memo((props) => {
                         </TabPanel>
                         <TabPanel>
                             {
-                                project.realization.map(el => {
+                                project.realization && project.realization.length && project.realization.map(el => {
                                     return (
                                         <div className="outline-no">
                                             <div className="q123" style={{
@@ -138,7 +138,7 @@ export const NewProjectPage = React.memo((props) => {
                         </TabPanel>
                         <TabPanel>
                             {
-                                project.interier.map(el => {
+                                project.interier && project.interier.length && project.interier.map(el => {
                                     return (
                                         <div className="outline-no">
                                             <div className="q123" style={{
